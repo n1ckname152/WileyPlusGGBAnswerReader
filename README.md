@@ -1,4 +1,6 @@
-This is a Chrome extension.
+#WileyPlusGGBAnswerReader
+
+This is a Chrome extension. It will show you the solution of WileyPlus questions that have the label "Math Symbolic and Graphing".
 
 Download this repo as a zip first.
 
