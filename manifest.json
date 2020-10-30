@@ -1,0 +1,40 @@
+{
+    "name": "GeoGebra Answer Reader",
+    "version": "1.0",
+    "description": "Reads GeoGebra answers from a WileyPlus page (all my homies use WebAssign)",
+    "permissions": [
+        "activeTab",
+        "declarativeContent"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://assessment.education.wiley.com/*",
+                "https://was.api.wiley.com/*"
+            ],
+            "js": [
+                "background.js",
+                "jquery-3.5.1.js",
+                "popup.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "WebAssign",
+        "default_icon": {
+            "16": "images/WA16.png",
+            "32": "images/WA32.png",
+            "48": "images/WA48.png",
+            "128": "images/WA128.png"
+        }
+    },
+    "icons": {
+        "16": "images/WA16.png",
+        "32": "images/WA32.png",
+        "48": "images/WA48.png",
+        "128": "images/WA128.png"
+    },
+    "manifest_version": 2 
+
+}
