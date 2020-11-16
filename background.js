@@ -15,7 +15,10 @@ function getURL() {
 
 function showSolution() {
   var script = document.createElement('script');
-  script.textContent = `ggbApplet.setValue('showsolution', 'true'); ggbApplet.setHeight(800);`;
+  var applet = $("[data-param-id]")
+  var elementID = applet.attr('id')
+
+  script.textContent = elementID + `.setValue('showsolution', 'true'); `+ elementID + `.setHeight(1000);`;
   (document.head || document.documentElement).appendChild(script);
   script.remove();
 }
